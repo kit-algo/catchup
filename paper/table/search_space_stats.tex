@@ -1,0 +1,12 @@
+\begin{tabular}{lrrrrrrrr}
+\toprule
+{} & \multicolumn{2}{c}{Elimination tree interval query} & \multicolumn{4}{c}{Lazy corridor Dijkstra} & \\ \cmidrule(lr){2-3} \cmidrule(lr){4-7}
+{} & \multirow{2}{*}{\makecell{Nodes in \\ search space}} & \multirow{2}{*}{\makecell{Relaxed \\ shortcuts}} & \multicolumn{2}{c}{Queue pops} & \multicolumn{2}{c}{Relaxed arcs} & \multicolumn{2}{c}{Time [ms]} \\ \cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+{} &                        &                &      no A* &  A* &        no A* &  A* &             no A* & A* \\
+\midrule
+Ger06 &                       735 &             48\,574 &       3\,328 &   831 &         3\,845 &   995 &              1.62 & 0.54 \\
+Ger17 &                       770 &             58\,903 &      18\,499 &  3\,099 &        19\,986 &  3\,502 &              8.70 & 1.59 \\
+Eur17 &                      1\,302 &            162\,295 &      39\,717 &  6\,876 &        43\,654 &  7\,928 &             19.55 & 3.76 \\
+\bottomrule
+\end{tabular}
+

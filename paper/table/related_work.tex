@@ -1,0 +1,32 @@
+\begin{tabular}{llrrrrrrrr}
+\toprule{} & {} & \multicolumn{2}{c}{Preprocessing} & Index & \multicolumn{3}{c}{Query} \\ \cmidrule(lr){3-4} \cmidrule(lr){6-8}
+{} & {} & Time & Cores & size &    Time & \multicolumn{2}{c}{Rel. error} \\ \cmidrule(lr){7-8}{} & {} &  [s] &       & [GB] &    [ms] & Avg. [\%] & Max. [\%] \\
+\midrule
+\parbox[t]{3mm}{\multirow{18}{*}{\rotatebox[origin=c]{90}{Ger06}}} & TD-Dijkstra &                              - &     - &               - &               525.48 & \multicolumn{2}{c}{exact} \\
+      & TDCALT \cite{dn-crdtd-12} &                            540 &     1 &   \textbf{0.23} &                 5.36 & \multicolumn{2}{c}{exact} \\
+      & TDCALT-K1.15 \cite{dn-crdtd-12} &                            540 &     1 &   \textbf{0.23} &                 1.87 &                0.050 &               13.840 \\
+      & eco L-SHARC \cite{d-tdsr-11} &                           4\,680 &     1 &            1.03 &                 6.31 & \multicolumn{2}{c}{exact} \\
+      & heu SHARC \cite{d-tdsr-11} &                          12\,360 &     1 &            0.64 &                 0.69 &                  n/r &                0.610 \\
+      & KaTCH &                            170 &    16 &            4.66 &                 0.63 & \multicolumn{2}{c}{exact} \\
+      & TCH \cite{bgsv-mtdtt-13} &                            378 &     8 &            4.66 &                 0.75 & \multicolumn{2}{c}{exact} \\
+      & ATCH (1.0) \cite{bgsv-mtdtt-13} &                            378 &     8 &            1.12 &                 1.24 & \multicolumn{2}{c}{exact} \\
+      & ATCH ($\infty$) \cite{bgsv-mtdtt-13} &                            378 &     8 &            0.55 &                 1.66 & \multicolumn{2}{c}{exact} \\
+      & inex. TCH (0.1) \cite{bgsv-mtdtt-13} &                            378 &     8 &            1.34 &                 0.70 &                0.020 &                0.100 \\
+      & inex. TCH (1.0) \cite{bgsv-mtdtt-13} &                            378 &     8 &            1.00 &                 0.69 &                0.270 &                1.010 \\
+      & TD-CRP (0.1) \cite{bdpw-dtdrp-16} &                            289 &    16 &            0.78 &                 1.92 &                0.050 &                0.250 \\
+      & TD-CRP (1.0) \cite{bdpw-dtdrp-16} &                            281 &    16 &            0.36 &                 1.66 &                0.680 &                2.850 \\
+      & FLAT \cite{kppwz-iotdr-17a} &                         158\,760 &     6 &           54.63 &                 1.27 &                0.015 &                  n/r \\
+      & CFLAT \cite{kppwz-iotdr-17a} &                         104\,220 &     6 &           34.63 &        \textbf{0.58} &                0.008 &                0.918 \\
+      & TD-S+9 &                            547 &     1 &            3.61 &                 1.67 &                0.001 &                1.523 \\
+      & \textbf{\tdcch{}} &                    \textbf{49} &    16 &            1.06 &                 0.70 & \multicolumn{2}{c}{exact} \\
+\addlinespace \parbox[t]{3mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{Ger17}}} & TD-Dijkstra &                              - &     - &               - &               869.79 & \multicolumn{2}{c}{exact} \\
+      & KaTCH &                            874 &    16 &           42.81 &        \textbf{1.38} & \multicolumn{2}{c}{exact} \\
+      & TD-S+9 &                            617 &     1 &            5.28 &                 2.28 &                0.001 &                0.963 \\
+      & \textbf{\tdcch{}} &                   \textbf{127} &    16 &   \textbf{1.50} &                 1.86 & \multicolumn{2}{c}{exact} \\
+\addlinespace \parbox[t]{3mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{Eur17}}} & TD-Dijkstra &                              - &     - &               - &              2\,581.16 & \multicolumn{2}{c}{exact} \\
+      & KaTCH &                           3\,089 &    16 &          146.97 &                  OOM & \multicolumn{2}{c}{exact} \\
+      & TD-S+9 &                           3\,368 &     1 &           18.84 &        \textbf{4.03} &                0.002 &                1.159 \\
+      & \textbf{\tdcch{}} &                   \textbf{675} &    16 &   \textbf{5.48} &                 4.50 & \multicolumn{2}{c}{exact} \\
+\bottomrule
+\end{tabular}
+

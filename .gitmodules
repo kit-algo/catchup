@@ -1,0 +1,12 @@
+[submodule "code/KaTCH"]
+	path = code/KaTCH
+	url = https://github.com/tim3z/KaTCH.git
+[submodule "code/RoutingKit"]
+	path = code/RoutingKit
+	url = https://github.com/RoutingKit/RoutingKit.git
+[submodule "code/rust_road_router"]
+	path = code/rust_road_router
+	url = https://github.com/kit-algo/rust_road_router.git
+[submodule "code/td_p"]
+	path = code/td_p
+	url = https://github.com/tim3z/td_p.git
