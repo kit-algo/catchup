@@ -4,7 +4,7 @@
 
 ---
 
-This repository contains the source code for the paper, the experiments and the evaluation of the SEA2020 paper "Space-efficient, Fast and Exact Routing in Time-dependent Road Networks".
+This repository contains the source code for the paper, the experiments and the evaluation of the ESA2020 paper "Space-efficient, Fast and Exact Routing in Time-dependent Road Networks".
 Everything is tied together using `rake`.
 Experiments can be run with `rake exp:all`.
 The default `rake` tasks builds the paper.
